@@ -7,6 +7,7 @@
   --line-border-empty: #e0e0e0;
   --gs-yellow: #fdb715;
   --gs-red: #a80000;
+  --gs-red-dark: #000000;
 }
 
 
@@ -179,17 +180,30 @@ h3 {
   margin: 20px auto;
 }
 
-.answers li {
+.answers li span{
   cursor: pointer;
+  color: rgb(180, 16, 106);
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 1000;
 }
 
-.answers li:hover {
-  color: #a80000;
+.answers li{
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 1000;
+}
+
+.answers li span:hover {
+  color: black;
 }
 
 .girlrising-logo {
   width: 157px;
   height: 43.4px;
+  background-color: transparent;
+  background: transparent;
 }
 
 .menubar {
@@ -234,3 +248,8 @@ h3 {
     flex-direction: column;
   }
 }
+
+.questionheading {
+  color: white;
+}
+
