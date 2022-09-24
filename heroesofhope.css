@@ -253,3 +253,12 @@ h3 {
   color: white;
 }
 
+.arrow {
+  height: 12;
+  width: 12;
+  vertical-align: middle;
+}
+
+.hidden{
+  display: none;
+}

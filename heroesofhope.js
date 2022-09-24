@@ -28,16 +28,47 @@ function update(currentActive) {
 
 const answers = ["answer1", "answer2", "answer3"];
 
-function reveal(id){
-  for(let i in answers){
-    console.log("making hidden " + answers[i])
-    document.getElementById(answers[i]).style.display="none";
-  }
+const arrowsup = ["up1", "up2", "up3"];
+const arrowsdown = ["down1", "down2", "down3"];
+const arrows = arrowsup.concat(arrowsdown);
+
+function addClass(id, cls){
+  document.getElementById(id).classList.add(cls);
+}
+
+function removeClass(id, cls){
+  document.getElementById(id).classList.remove(cls);
+}
+
+function hide(id){
+  addClass(id, "hidden");
+}
+
+function show(id){
+  removeClass(id, "hidden");
+}
+
+function scrollToBottom(id){
   var answer = document.getElementById(id);
-  answer.style.display="block";
-  var top = answer.getBoundingClientRect().top;
+  var bottom = answer.getBoundingClientRect().bottom;
   window.scroll({
-  top: top,
+  top: bottom,
   behavior: 'smooth'
-});
+  });
+}
+
+function reveal(index){
+  for(let i in answers){
+    hide(answers[i]);
+  }
+  for(let i in arrows){
+    hide(arrows[i]);
+  }
+  for(let i in arrowsup){
+    show(arrowsup[i]);
+  }
+  show("answer" + index);
+  hide("up" + index);
+  show("down" + index);
+  scrollToBottom("answer" + index);
 }
