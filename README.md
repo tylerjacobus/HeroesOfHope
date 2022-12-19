@@ -1,2 +1,3 @@
-# heroesofhope.github.io
-Study guide for Heroes of Hope
+# Study guide for Heroes of Hope
+[The Study Guide](https://tylerjacobus.github.io/heroesofhope/)
+I created this site in high school. I had been volunteering with Girl Rising for a couple of years and learned more about the issues Girl Rising works on including the connections between girls’ education and climate change. I had the chance to meet Ayo Solanke and learn more about her graphic novel. I learned a lot from her book and from meeting her and I thought it would be great to have a learning guide to go along with the book for other high school students like me. I used Javascript and HTML to create this website.

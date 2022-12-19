@@ -2,6 +2,7 @@
 <head>
   <script src="heroesofhope.js"></script>
   <link href="heroesofhope.css" rel="stylesheet"> </link>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 </head>
 <header class="topheader">
 <div class="menubar">
@@ -11,97 +12,80 @@
   </a>
 </div>
 </header>
-</span><div class="container">
+<div class="container">
   <div class="progress-container">
     <div class="progress" id="progress" style="width: 0%"> </div>
     <div class="circle active">1</div>
-    <div class="circle">2</div>
-    <div class="circle">3</div>
-    <div class="circle">4</div>
-    <div class="circle">5</div>
-    <div class="circle">6</div>
-    <div class="circle">7</div>
+    <a href="page2.html" class="circlelink"><div class="circle">2</div></a>
+    <a href="page3.html" class="circlelink"><div class="circle">3</div></a>
+    <a href="page4.html" class="circlelink"><div class="circle">4</div></a>
+    <a href="page5.html" class="circlelink"><div class="circle">5</div></a>
+    <a href="page6.html" class="circlelink"><div class="circle">6</div></a>
+    <a href="page7.html" class="circlelink"><div class="circle">7</div></a>
   </div>
 </div>
 <p>
-<h1 class="heading">
-  Heroes of Hope: Idara's Story
-</h1>
-<h3 class="heading">
+  <h1 class="heading">
+    Heroes of Hope: Idara's Story
+  </h1>
+  <h3 class="heading">
     A Graphic Novel by Ayomide Solanke
-</h3>
+  </h3>
 </p>
 <div class="bigguy">
-<div class="leftpanel">
-   <img src="heroesofhope.png">
-         </img> 
-</div>
-<div class="rightpanel">
-  <div class="paragraphpart">
+  <div class="leftpanel">
+    <img src="heroesofhope.png"/>
+  </div>
+  <div class="rightpanel">
+    <div class="paragraphpart">
    
-<p> In the graphic novel, Heroes of Hope, Ayomide Solanke tells the story of a teenage girl who was forced to stop going to school because of the effects of climate change in her region of southern Nigeria. Changes in weather patterns have left Idara’s family farm unproductive and the family faces difficult economic circumstances.  Climate change is affecting all of us, but around the world, it is impacting girls more severely.
+      <p> In the graphic novel, Heroes of Hope, Ayomide Solanke tells the story of a teenage girl who was forced to stop going to school because of the effects of climate change in her region of southern Nigeria. Changes in weather patterns have left Idara’s family farm unproductive and the family faces difficult economic circumstances.  Climate change is affecting all of us, but around the world, it is impacting girls more severely.
 
-</p>
-  </div>
-  <div class="questionpart">
-    <h3 class="questionheading"> 
-      WHAT DO YOU THINK?
-    </h3>
-    <p>
-     <strong> How does a worsening climate crisis impact girls?
-    </strong>
-    </p>
-    <div class="answers">
-    <ol type="1">
-      <li onclick= "reveal(1)">
-        <span>Loss of homes</span>
-        <svg id="down1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  stroke-width="3" stroke="currentColor" class="arrow hidden">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-        </svg>
-        <svg id="up1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="arrow">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-        </svg>
-      </li>
-      <li onclick= "reveal(2)">
-        <span>Risk of Violence</span>
-        <svg id="down2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="arrow hidden">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-        </svg>
-        <svg id="up2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="arrow">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-        </svg>
-      </li>
-      <li onclick= "reveal(3)">
-        <span>Food and Water Shortages</span>
-        <svg id="down3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="arrow hidden">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-        </svg>
-        <svg id="up3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="arrow">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-        </svg>
-      </li>
-    </ol>
+      </p>
     </div>
+    <div class="questionpart">
+      <h3 class="questionheading"> 
+	WHAT DO YOU THINK?
+      </h3>
+      <p>
+	<strong> How does a worsening climate crisis impact girls?    </strong>
+      </p>
+    </div>
+    <div class="answerpart">
+      <div class="answerhead" onclick= "toggle(1)">
+	Loss of homes
+	<img id="up1" src="chevronup.svg" class="arrow">
+	<img id="down1" src="chevrondown.svg"  class="arrow hidden">
+	<br/><span class="answersubhead">Hundreds of million climate migrants by 2050</span>
+      </div>
+      <div id="answer1" class="answerdetail hidden">
+	Each year, tens of millions of people across the globe have to leave their homes because of floods, storms, droughts, and other weather-related disasters. The World Bank estimates that the three regions of Latin America, sub-Saharan Africa, and Southeast Asia will generate 143 million climate migrants by 2050.  Women and girls bear most of the burden. According to the UN, 80% of people displaced by climate change effects are women and girls. This is true in Nigeria and other areas of Central Africa where there has been persistent drought and 90% of Lake Chad has dried up.  It is also true in the United States. For example, in 2005 Hurricane Katrina primarily impacted women of color.
+      </div>
+    </div>
+    <div class="answerpart">
+      <div class="answerhead" onclick= "toggle(2)">
+	Risk of violence
+	<img id="up2" src="chevronup.svg" class="arrow">
+	<img id="down2" src="chevrondown.svg"  class="arrow hidden">
+	<br/><span class="answersubhead">20-30% increase in trafficking after weather disasters</span>
+      </div>
+      <div id="answer2" class="answerdetail hidden">
+	Because of gender inequality, women and girls face additional dangers related to climate change disasters. Women and girls who have to leave their homes or loss their homes because of climate change disasters often face the risks of gender-based violence, trafficking, and exploitation. The UN Environment Programme estimates that there is a 20-30% increase in trafficking after weather-related disasters. Women and girls who have to leave their homes often have fewer options on a new way forward because of gender bias.  For example, they may face restrictions on land and property rights, they may face restrictions on when and where they can travel, and they may have fewer options to earn a living in order to get reestablished, get a new home or repair their lost homes.
+      </div>
+    </div>
+    <div class="answerpart">
+      <div class="answerhead" onclick= "toggle(3)">
+	Food and Water Shortages
+	<img id="up3" src="chevronup.svg" class="arrow">
+	<img id="down3" src="chevrondown.svg"  class="arrow hidden">
+	<br/><span class="answersubhead">Women and girls bear most of the responsibility</span>
+      </div>
+      <div id="answer3" class="answerdetail hidden">
+	Women produce most of the world’s food and bear most of the burden of getting food and water for their families.  In many countries agriculture is the most important way to earn a living for women. During periods of drought and erratic rainfall, women often have to work many more hours to make enough money or get enough food for their families. This puts added pressure on girls, who often have to <a href="https://womendeliver.org/investment/invest-women-tackle-climate-change-conserve-environment/">leave school</a> to help their mothers manage the increased burden. Despite women and girls having most of the responsibility for food and water they do not even have equal rights in this area.  Men own the majority of the world’s property, and women have historically held less than 10% of all legal and legislative positions in the field of environment, natural resources and energy.
+      </div>
+    </div>
+    <a href="page2.html" class="next">Next</a>
+    <a href="https://github.com/tylerjacobus/heroesofhope" class="footer">Site by Tyler Jacobus, Girl Rising Student Ambassador, using html, css, and javascript</a>
   </div>
-  <div id="answer1" class="learnmore paragraphpart hidden">
-  <p>
-Each year, tens of millions of people across the globe have to leave their homes because of floods, storms, droughts, and other weather-related disasters. The World Bank estimates that the three regions of Latin America, sub-Saharan Africa, and Southeast Asia will generate 143 million climate migrants by 2050.  Women and girls bear most of the burden. According to the UN, 80% of people displaced by climate change effects are women and girls. This is true in Nigeria and other areas of Central Africa where there has been persistent drought and 90% of Lake Chad has dried up.  It is also true in the United States. For example, in 2005 Hurricane Katrina primarily impacted women of color.    
-  </p>
 </div>
-  
-  <div id="answer2" class="learnmore paragraphpart hidden">
-  <p>
-Because of gender inequality, women and girls face additional dangers related to climate change disasters. Women and girls who have to leave their homes or loss their homes because of climate change disasters often face the risks of gender-based violence, trafficking, and exploitation. The UN Environment Programme estimates that there is a 20-30% increase in trafficking after weather-related disasters. Women and girls who have to leave their homes often have fewer options on a new way forward because of gender bias.  For example, they may face restrictions on land and property rights, they may face restrictions on when and where they can travel, and they may have fewer options to earn a living in order to get reestablished, get a new home or repair their lost homes.
-  </p>
-</div>
-  
-  <div id="answer3" class="learnmore paragraphpart hidden">
-  <p>
-Women produce most of the world’s food and bear most of the burden of getting food and water for their families.  In many countries agriculture is the most important way to earn a living for women. During periods of drought and erratic rainfall, women often have to work many more hours to make enough money or get enough food for their families. This puts added pressure on girls, who often have to <a href="https://womendeliver.org/investment/invest-women-tackle-climate-change-conserve-environment/">leave school</a> to help their mothers manage the increased burden. Despite women and girls having most of the responsibility for food and water they do not even have equal rights in this area.  Men own the majority of the world’s property, and women have historically held less than 10% of all legal and legislative positions in the field of environment, natural resources and energy.
-  </p>
-</div>
-  
-</div>
-</div>
-
 </html>
