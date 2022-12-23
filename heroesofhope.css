@@ -187,6 +187,17 @@ h3 {
   justify-content: space-between;
 }
 
+.menubar a {
+  text-decoration: none;
+}
+
+.menubartitle {
+  color: var(--gs-yellow);
+  font-family: proxima-nova;
+  font-size: 20;
+  font-weight: 800;
+}
+
 .topheader {
   background-color: var(--gs-red);
   width: 100%;
@@ -206,7 +217,6 @@ h3 {
 
 .leftpanel img {
   float: left;
-
   width: 100%;
 }
 
@@ -289,7 +299,7 @@ h3 {
 .footer {
   font-family: Arial;
   font-size: 12px;
-  color: gray;
+  color: #63666A;
   text-decoration: none;  
 }
 
